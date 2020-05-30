@@ -1,0 +1,87 @@
+<!doctype html>
+<html>
+<head>
+</head>
+<style type="text/css">
+	*{
+	background:#651923;
+	
+}
+
+.container{
+	 background-color:white;
+}
+
+form {
+    border: 3px solid #f1f1f1;
+    width: 30%;
+    color:white;
+}
+
+input[type=text], input[type=password] {
+    width: 70%;
+    padding: 12px 20px;
+    margin: 8px 0;
+    display: inline-block;
+    border: 1px solid #ccc;
+    box-sizing: border-box;
+    color: white;
+}
+
+.button {
+    background-color: #4CAF50;
+    color: white;
+    padding: 14px 20px;
+    margin: 8px 0;
+    border: none;
+    cursor: pointer;
+    width: 50%;
+}
+.button:hover {
+    opacity: 0.8;
+}
+
+·img{
+	border: 1px solid #ddd;
+    border-radius: 4px;
+    padding: 5px;
+    width: 150px;
+}
+.user{
+    background-color:white;
+}
+.pass{
+    background-color: white;
+}
+</style>
+<body>
+<h1 id="ls" align="center">Login al sistema</h1>
+<center>
+<form action="login.php?acc=1" method="post">
+<table widt="400">
+<tr>
+	<td>
+		Usuario:
+	</td>
+	<td>
+		<input type="text" class="user" name="txtUser" required>
+	</td>
+</tr>
+<tr>
+	<td>
+		Clave:
+	</td>
+	<td>
+		<input type="password" class="pass" name="txtPass" required>
+	</td>
+</tr>
+<tr>
+<td colspan="2">
+	<input type="button" class="btn-primary" type="submit" name="btnLogin" value="Ingresar">
+</td>
+</tr>
+</table>
+</form>
+</center>
+</body>
+</html>
